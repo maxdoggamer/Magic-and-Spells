@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "maxdogs_magic_and_spells:items/wand"
+  }
+}

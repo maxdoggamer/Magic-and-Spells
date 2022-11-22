@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "Accio",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "AccioKeyOnKeyPressed"
+    }
+  }
+}
