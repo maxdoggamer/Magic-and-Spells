@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "maxdogs_magic_and_spells:mana_stone"
+    },
+    "1": {
+      "item": "maxdogs_magic_and_spells:mana_stone"
+    },
+    "2": {
+      "item": "maxdogs_magic_and_spells:mana_stone"
+    },
+    "3": {
+      "item": "maxdogs_magic_and_spells:mana_stone"
+    },
+    "4": {
+      "item": "maxdogs_magic_and_spells:mana_stone"
+    },
+    "5": {
+      "item": "maxdogs_magic_and_spells:mana_stone"
+    },
+    "6": {
+      "item": "maxdogs_magic_and_spells:mana_stone"
+    },
+    "7": {
+      "item": "maxdogs_magic_and_spells:mana_stone"
+    },
+    "8": {
+      "item": "maxdogs_magic_and_spells:mana_stone"
+    }
+  },
+  "result": {
+    "item": "maxdogs_magic_and_spells:mana_stone_block",
+    "count": 1
+  }
+}

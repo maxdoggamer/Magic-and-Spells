@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "maxdogs_magic_and_spells:mana_stone_ore"
+  },
+  "result": "maxdogs_magic_and_spells:mana_stone"
+}

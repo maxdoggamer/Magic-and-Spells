@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "maxdogs_magic_and_spells:mana_stone_ore",
+    "maxdogs_magic_and_spells:mana_stone_block"
+  ]
+}

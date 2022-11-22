@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "maxdogs_magic_and_spells:block/mana_stone_block"
+    }
+  }
+}

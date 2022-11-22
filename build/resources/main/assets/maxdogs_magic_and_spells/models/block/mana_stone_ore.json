@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "maxdogs_magic_and_spells:blocks/manastone_ore",
+    "particle": "maxdogs_magic_and_spells:blocks/manastone_ore"
+  },
+  "render_type": "solid"
+}
