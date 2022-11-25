@@ -17,4 +17,6 @@ public class MaxdogsMagicAndSpellsModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES,
 			MaxdogsMagicAndSpellsMod.MODID);
 	public static final RegistryObject<SimpleParticleType> ACCIO_PARTICLES = REGISTRY.register("accio_particles", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> STUPEFY_PARTICLES = REGISTRY.register("stupefy_particles",
+			() -> new SimpleParticleType(false));
 }

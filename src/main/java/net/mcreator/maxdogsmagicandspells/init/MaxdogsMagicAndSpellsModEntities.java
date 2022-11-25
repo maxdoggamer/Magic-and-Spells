@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.maxdogsmagicandspells.entity.StupefySpellEntity;
 import net.mcreator.maxdogsmagicandspells.entity.AccioSpellEntity;
 import net.mcreator.maxdogsmagicandspells.MaxdogsMagicAndSpellsMod;
 
@@ -25,6 +26,9 @@ public class MaxdogsMagicAndSpellsModEntities {
 			MaxdogsMagicAndSpellsMod.MODID);
 	public static final RegistryObject<EntityType<AccioSpellEntity>> ACCIO_SPELL = register("projectile_accio_spell",
 			EntityType.Builder.<AccioSpellEntity>of(AccioSpellEntity::new, MobCategory.MISC).setCustomClientFactory(AccioSpellEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<StupefySpellEntity>> STUPEFY_SPELL = register("projectile_stupefy_spell",
+			EntityType.Builder.<StupefySpellEntity>of(StupefySpellEntity::new, MobCategory.MISC).setCustomClientFactory(StupefySpellEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

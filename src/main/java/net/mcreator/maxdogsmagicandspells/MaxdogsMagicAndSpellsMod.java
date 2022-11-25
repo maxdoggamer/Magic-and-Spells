@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.maxdogsmagicandspells.init.MaxdogsMagicAndSpellsModParticleTypes;
+import net.mcreator.maxdogsmagicandspells.init.MaxdogsMagicAndSpellsModMobEffects;
 import net.mcreator.maxdogsmagicandspells.init.MaxdogsMagicAndSpellsModItems;
 import net.mcreator.maxdogsmagicandspells.init.MaxdogsMagicAndSpellsModFeatures;
 import net.mcreator.maxdogsmagicandspells.init.MaxdogsMagicAndSpellsModEntities;
@@ -57,6 +58,8 @@ public class MaxdogsMagicAndSpellsMod {
 		MaxdogsMagicAndSpellsModEntities.REGISTRY.register(bus);
 
 		MaxdogsMagicAndSpellsModFeatures.REGISTRY.register(bus);
+
+		MaxdogsMagicAndSpellsModMobEffects.REGISTRY.register(bus);
 
 		MaxdogsMagicAndSpellsModParticleTypes.REGISTRY.register(bus);
 

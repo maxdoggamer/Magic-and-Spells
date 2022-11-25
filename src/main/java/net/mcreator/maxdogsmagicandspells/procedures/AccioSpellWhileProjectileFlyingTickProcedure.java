@@ -9,6 +9,6 @@ import net.mcreator.maxdogsmagicandspells.init.MaxdogsMagicAndSpellsModParticleT
 public class AccioSpellWhileProjectileFlyingTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (MaxdogsMagicAndSpellsModParticleTypes.ACCIO_PARTICLES.get()), x, y, z, 3, 1, 1, 1, 1);
+			_level.sendParticles((SimpleParticleType) (MaxdogsMagicAndSpellsModParticleTypes.ACCIO_PARTICLES.get()), x, y, z, 3, 0, 0, 0, 1);
 	}
 }

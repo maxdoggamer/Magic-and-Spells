@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Stupefy",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "StupefyKeyOnKeyPressed"
+    }
+  }
+}

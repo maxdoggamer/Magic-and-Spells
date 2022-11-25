@@ -1,9 +1,12 @@
 {
+  "effect.maxdogs_magic_and_spells.stunned": "Stunned",
   "block.maxdogs_magic_and_spells.mana_stone_block": "Block of ManaStone",
   "key.maxdogs_magic_and_spells.accio_key": "Accio",
   "item.maxdogs_magic_and_spells.wand_1": "Wand",
   "item.maxdogs_magic_and_spells.accio_spell": "Accio Spell",
+  "key.maxdogs_magic_and_spells.stupefy_key": "Stupefy",
   "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
+  "item.maxdogs_magic_and_spells.stupefy_spell": "Stupefy",
   "item.maxdogs_magic_and_spells.magicbullet": "Magicbullet",
   "block.maxdogs_magic_and_spells.mana_stone_ore": "ManaStone Ore"
 }

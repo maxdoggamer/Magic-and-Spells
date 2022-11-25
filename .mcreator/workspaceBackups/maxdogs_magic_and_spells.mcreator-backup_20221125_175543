@@ -1,0 +1,333 @@
+{
+  "mod_elements": [
+    {
+      "name": "ManaStone",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_stone"
+    },
+    {
+      "name": "ManaStoneOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_stone_ore"
+    },
+    {
+      "name": "ManaStoneBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_stone_block"
+    },
+    {
+      "name": "ManaStoneOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_stone_ore_block_recipe"
+    },
+    {
+      "name": "ManaStoneBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_stone_block_ore_recipe"
+    },
+    {
+      "name": "ManaStoneOreSmelting",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_stone_ore_smelting"
+    },
+    {
+      "name": "Accio",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wand1",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand_1"
+    },
+    {
+      "name": "Magicbullet",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicbullet"
+    },
+    {
+      "name": "AccioParticles",
+      "type": "particle",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_particles"
+    },
+    {
+      "name": "AccioSpellWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_spell_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AccioSpell",
+      "type": "rangeditem",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_spell"
+    },
+    {
+      "name": "AccioKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AccioKey",
+      "type": "keybind",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_key"
+    },
+    {
+      "name": "Stunned",
+      "type": "potioneffect",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stunned",
+      "path": "~/Stupefy"
+    },
+    {
+      "name": "StunnedOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stunned_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stupefy"
+    },
+    {
+      "name": "StupefySpellProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_spell_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stupefy"
+    },
+    {
+      "name": "StupefySpell",
+      "type": "rangeditem",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_spell",
+      "path": "~/Stupefy"
+    },
+    {
+      "name": "StupefyParticles",
+      "type": "particle",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_particles",
+      "path": "~/Stupefy"
+    },
+    {
+      "name": "StupefySpellWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_spell_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StupefyKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StupefyKey",
+      "type": "keybind",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_key"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Stunned",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "Recharge",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "true"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "effect.maxdogs_magic_and_spells.stunned": "Stunned",
+      "block.maxdogs_magic_and_spells.mana_stone_block": "Block of ManaStone",
+      "key.maxdogs_magic_and_spells.accio_key": "Accio",
+      "item.maxdogs_magic_and_spells.wand_1": "Wand",
+      "item.maxdogs_magic_and_spells.accio_spell": "Accio Spell",
+      "key.maxdogs_magic_and_spells.stupefy_key": "Stupefy",
+      "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
+      "item.maxdogs_magic_and_spells.stupefy_spell": "Stupefy",
+      "item.maxdogs_magic_and_spells.magicbullet": "Magicbullet",
+      "block.maxdogs_magic_and_spells.mana_stone_ore": "ManaStone Ore"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Stupefy",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "maxdogs_magic_and_spells",
+    "modName": "MaxDog\u0027s Magic and Spells",
+    "version": "1.0.0",
+    "author": "Patricia, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.maxdogsmagicandspells",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

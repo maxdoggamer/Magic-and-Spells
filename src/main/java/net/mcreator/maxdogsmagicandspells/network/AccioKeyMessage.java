@@ -52,7 +52,7 @@ public class AccioKeyMessage {
 			return;
 		if (type == 0) {
 
-			AccioKeyOnKeyPressedProcedure.execute(entity);
+			AccioKeyOnKeyPressedProcedure.execute(world, entity);
 		}
 	}
 

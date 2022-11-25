@@ -14,6 +14,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.maxdogsmagicandspells.item.Wand1Item;
+import net.mcreator.maxdogsmagicandspells.item.StupefySpellItem;
 import net.mcreator.maxdogsmagicandspells.item.ManaStoneItem;
 import net.mcreator.maxdogsmagicandspells.item.MagicbulletItem;
 import net.mcreator.maxdogsmagicandspells.item.AccioSpellItem;
@@ -29,6 +30,7 @@ public class MaxdogsMagicAndSpellsModItems {
 	public static final RegistryObject<Item> WAND_1 = REGISTRY.register("wand_1", () -> new Wand1Item());
 	public static final RegistryObject<Item> ACCIO_SPELL = REGISTRY.register("accio_spell", () -> new AccioSpellItem());
 	public static final RegistryObject<Item> MAGICBULLET = REGISTRY.register("magicbullet", () -> new MagicbulletItem());
+	public static final RegistryObject<Item> STUPEFY_SPELL = REGISTRY.register("stupefy_spell", () -> new StupefySpellItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
