@@ -1,4 +1,4 @@
-Java Launcher: C:\Users\Patricia\Downloads\MCreator.2022.3.Windows.64bit\MCreator20223\jdk\bin\java.exe
+Java Launcher: C:\Users\Patricia\Downloads\MCreator.EAP.2022.3.b44708.Windows.64bit (1)\MCreator20223\jdk\bin\java.exe
 Arguments: '--in-jar, C:\Users\Patricia\MCreatorWorkspaces\maxdogs_magic_and_spells\build\libs\modid-1.0.jar, --out-jar, C:\Users\Patricia\MCreatorWorkspaces\maxdogs_magic_and_spells\build\reobfJar\output.jar, --srg-in, C:\Users\Patricia\MCreatorWorkspaces\maxdogs_magic_and_spells\build\createMcpToSrg\output.tsrg, --live'
 Classpath:
  - C:\Users\Patricia\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar
