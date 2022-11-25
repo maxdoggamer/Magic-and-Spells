@@ -47,6 +47,110 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_stone_ore_smelting"
+    },
+    {
+      "name": "Accio",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wand1",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand_1"
+    },
+    {
+      "name": "Magicbullet",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicbullet"
+    },
+    {
+      "name": "AccioParticles",
+      "type": "particle",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_particles"
+    },
+    {
+      "name": "AccioSpellWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_spell_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AccioSpell",
+      "type": "rangeditem",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_spell"
+    },
+    {
+      "name": "AccioKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AccioKey",
+      "type": "keybind",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accio_key"
     }
   ],
   "variable_elements": [],
@@ -54,7 +158,11 @@
   "language_map": {
     "en_us": {
       "block.maxdogs_magic_and_spells.mana_stone_block": "Block of ManaStone",
+      "key.maxdogs_magic_and_spells.accio_key": "Accio",
+      "item.maxdogs_magic_and_spells.wand_1": "Wand",
+      "item.maxdogs_magic_and_spells.accio_spell": "Accio Spell",
       "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
+      "item.maxdogs_magic_and_spells.magicbullet": "Magicbullet",
       "block.maxdogs_magic_and_spells.mana_stone_ore": "ManaStone Ore"
     }
   },
