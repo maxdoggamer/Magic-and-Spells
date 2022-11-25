@@ -1,5 +1,9 @@
 {
   "block.maxdogs_magic_and_spells.mana_stone_block": "Block of ManaStone",
+  "key.maxdogs_magic_and_spells.accio_key": "Accio",
+  "item.maxdogs_magic_and_spells.wand_1": "Wand",
+  "item.maxdogs_magic_and_spells.accio_spell": "Accio Spell",
   "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
+  "item.maxdogs_magic_and_spells.magicbullet": "Magicbullet",
   "block.maxdogs_magic_and_spells.mana_stone_ore": "ManaStone Ore"
 }

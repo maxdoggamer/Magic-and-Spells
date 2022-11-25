@@ -13,7 +13,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.maxdogsmagicandspells.item.Wand1Item;
 import net.mcreator.maxdogsmagicandspells.item.ManaStoneItem;
+import net.mcreator.maxdogsmagicandspells.item.MagicbulletItem;
+import net.mcreator.maxdogsmagicandspells.item.AccioSpellItem;
 import net.mcreator.maxdogsmagicandspells.MaxdogsMagicAndSpellsMod;
 
 public class MaxdogsMagicAndSpellsModItems {
@@ -23,6 +26,9 @@ public class MaxdogsMagicAndSpellsModItems {
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> MANA_STONE_BLOCK = block(MaxdogsMagicAndSpellsModBlocks.MANA_STONE_BLOCK,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> WAND_1 = REGISTRY.register("wand_1", () -> new Wand1Item());
+	public static final RegistryObject<Item> ACCIO_SPELL = REGISTRY.register("accio_spell", () -> new AccioSpellItem());
+	public static final RegistryObject<Item> MAGICBULLET = REGISTRY.register("magicbullet", () -> new MagicbulletItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
