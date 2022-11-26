@@ -19,4 +19,6 @@ public class MaxdogsMagicAndSpellsModParticleTypes {
 	public static final RegistryObject<SimpleParticleType> ACCIO_PARTICLES = REGISTRY.register("accio_particles", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> STUPEFY_PARTICLES = REGISTRY.register("stupefy_particles",
 			() -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> LEVIOSA_PARTICLES = REGISTRY.register("leviosa_particles",
+			() -> new SimpleParticleType(false));
 }

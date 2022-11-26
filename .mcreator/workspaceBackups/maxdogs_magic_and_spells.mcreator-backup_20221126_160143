@@ -244,9 +244,199 @@
           }
         ]
       }
+    },
+    {
+      "name": "StupefyKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StupefyKey",
+      "type": "keybind",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_key"
+    },
+    {
+      "name": "LeviosaSpellProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Levioso"
+    },
+    {
+      "name": "LeviosaParticles",
+      "type": "particle",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_particles",
+      "path": "~/Levioso"
+    },
+    {
+      "name": "LeviosaSpellWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LeviosaSpell",
+      "type": "rangeditem",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell"
+    },
+    {
+      "name": "LeviosaKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Levioso"
+    },
+    {
+      "name": "LeviosaKey",
+      "type": "keybind",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_key",
+      "path": "~/Levioso"
+    },
+    {
+      "name": "LevicorpusSpellProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levicorpus_spell_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Levicorpus"
+    },
+    {
+      "name": "LevicorpusSpell",
+      "type": "rangeditem",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levicorpus_spell",
+      "path": "~/Levicorpus"
+    },
+    {
+      "name": "LevicorpusKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levicorpus_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Levicorpus"
+    },
+    {
+      "name": "LevicorpusKey",
+      "type": "keybind",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levicorpus_key",
+      "path": "~/Levicorpus"
     }
   ],
   "variable_elements": [
+    {
+      "name": "Stunned",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
     {
       "name": "Recharge",
       "type": "logic",
@@ -257,14 +447,19 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "key.maxdogs_magic_and_spells.stupefy_key": "Stupefy",
+      "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
       "effect.maxdogs_magic_and_spells.stunned": "Stunned",
+      "key.maxdogs_magic_and_spells.levicorpus_key": "Levicorpus",
+      "key.maxdogs_magic_and_spells.leviosa_key": "Leviosa",
       "block.maxdogs_magic_and_spells.mana_stone_block": "Block of ManaStone",
       "key.maxdogs_magic_and_spells.accio_key": "Accio",
       "item.maxdogs_magic_and_spells.wand_1": "Wand",
       "item.maxdogs_magic_and_spells.accio_spell": "Accio Spell",
-      "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
       "item.maxdogs_magic_and_spells.stupefy_spell": "Stupefy",
+      "item.maxdogs_magic_and_spells.leviosa_spell": "Leviosa Spell",
       "item.maxdogs_magic_and_spells.magicbullet": "Magicbullet",
+      "item.maxdogs_magic_and_spells.levicorpus_spell": "Levicorpus",
       "block.maxdogs_magic_and_spells.mana_stone_ore": "ManaStone Ore"
     }
   },
@@ -273,6 +468,14 @@
     "children": [
       {
         "name": "Stupefy",
+        "children": []
+      },
+      {
+        "name": "Levioso",
+        "children": []
+      },
+      {
+        "name": "Levicorpus",
         "children": []
       }
     ]

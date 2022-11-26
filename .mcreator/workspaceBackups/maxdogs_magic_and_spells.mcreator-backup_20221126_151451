@@ -272,9 +272,81 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "stupefy_key"
+    },
+    {
+      "name": "LeviosaSpellProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Levioso"
+    },
+    {
+      "name": "LeviosaParticles",
+      "type": "particle",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_particles",
+      "path": "~/Levioso"
+    },
+    {
+      "name": "LeviosaSpellWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LeviosaSpell",
+      "type": "rangeditem",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell"
     }
   ],
   "variable_elements": [
+    {
+      "name": "Stunned",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
     {
       "name": "Recharge",
       "type": "logic",
@@ -293,6 +365,7 @@
       "key.maxdogs_magic_and_spells.stupefy_key": "Stupefy",
       "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
       "item.maxdogs_magic_and_spells.stupefy_spell": "Stupefy",
+      "item.maxdogs_magic_and_spells.leviosa_spell": "Leviosa Spell",
       "item.maxdogs_magic_and_spells.magicbullet": "Magicbullet",
       "block.maxdogs_magic_and_spells.mana_stone_ore": "ManaStone Ore"
     }
@@ -302,6 +375,10 @@
     "children": [
       {
         "name": "Stupefy",
+        "children": []
+      },
+      {
+        "name": "Levioso",
         "children": []
       }
     ]

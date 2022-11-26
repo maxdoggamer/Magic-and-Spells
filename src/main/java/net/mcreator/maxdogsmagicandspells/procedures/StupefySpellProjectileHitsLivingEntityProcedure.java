@@ -11,9 +11,9 @@ public class StupefySpellProjectileHitsLivingEntityProcedure {
 		if (entity == null)
 			return;
 		double Stunlevel = 0;
-		Stunlevel = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MaxdogsMagicAndSpellsModMobEffects.STUNNED.get())
+		Stunlevel = (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MaxdogsMagicAndSpellsModMobEffects.STUNNED.get())
 				? _livEnt.getEffect(MaxdogsMagicAndSpellsModMobEffects.STUNNED.get()).getAmplifier()
-				: 0;
+				: 0) + 1;
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MaxdogsMagicAndSpellsModMobEffects.STUNNED.get(), 1200, (int) Stunlevel, (false), (false)));
 	}

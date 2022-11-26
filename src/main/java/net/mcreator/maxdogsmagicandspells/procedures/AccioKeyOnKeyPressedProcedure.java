@@ -48,7 +48,7 @@ public class AccioKeyOnKeyPressedProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			MaxdogsMagicAndSpellsMod.queueServerWork(20, () -> {
+			MaxdogsMagicAndSpellsMod.queueServerWork(10, () -> {
 				{
 					boolean _setval = true;
 					entity.getCapability(MaxdogsMagicAndSpellsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

@@ -17,5 +17,7 @@ public class MaxdogsMagicAndSpellsModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(MaxdogsMagicAndSpellsModEntities.ACCIO_SPELL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(MaxdogsMagicAndSpellsModEntities.STUPEFY_SPELL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(MaxdogsMagicAndSpellsModEntities.LEVIOSA_SPELL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(MaxdogsMagicAndSpellsModEntities.LEVICORPUS_SPELL.get(), ThrownItemRenderer::new);
 	}
 }

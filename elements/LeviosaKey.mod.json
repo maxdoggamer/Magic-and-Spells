@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Leviosa",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "LeviosaKeyOnKeyPressed"
+    }
+  }
+}

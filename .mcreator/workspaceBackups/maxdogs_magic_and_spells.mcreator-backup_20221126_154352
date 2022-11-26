@@ -272,6 +272,102 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "stupefy_key"
+    },
+    {
+      "name": "LeviosaSpellProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Levioso"
+    },
+    {
+      "name": "LeviosaParticles",
+      "type": "particle",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_particles",
+      "path": "~/Levioso"
+    },
+    {
+      "name": "LeviosaSpellWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LeviosaSpell",
+      "type": "rangeditem",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell"
+    },
+    {
+      "name": "LeviosaKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Levioso"
+    },
+    {
+      "name": "LeviosaKey",
+      "type": "keybind",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_key",
+      "path": "~/Levioso"
     }
   ],
   "variable_elements": [
@@ -291,14 +387,16 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "key.maxdogs_magic_and_spells.stupefy_key": "Stupefy",
+      "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
       "effect.maxdogs_magic_and_spells.stunned": "Stunned",
+      "key.maxdogs_magic_and_spells.leviosa_key": "Leviosa",
       "block.maxdogs_magic_and_spells.mana_stone_block": "Block of ManaStone",
       "key.maxdogs_magic_and_spells.accio_key": "Accio",
       "item.maxdogs_magic_and_spells.wand_1": "Wand",
       "item.maxdogs_magic_and_spells.accio_spell": "Accio Spell",
-      "key.maxdogs_magic_and_spells.stupefy_key": "Stupefy",
-      "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
       "item.maxdogs_magic_and_spells.stupefy_spell": "Stupefy",
+      "item.maxdogs_magic_and_spells.leviosa_spell": "Leviosa Spell",
       "item.maxdogs_magic_and_spells.magicbullet": "Magicbullet",
       "block.maxdogs_magic_and_spells.mana_stone_ore": "ManaStone Ore"
     }
@@ -308,6 +406,14 @@
     "children": [
       {
         "name": "Stupefy",
+        "children": []
+      },
+      {
+        "name": "Levioso",
+        "children": []
+      },
+      {
+        "name": "Levicorpus",
         "children": []
       }
     ]

@@ -272,6 +272,27 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "stupefy_key"
+    },
+    {
+      "name": "LeviosaSpellProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leviosa_spell_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Levioso"
     }
   ],
   "variable_elements": [
@@ -308,6 +329,10 @@
     "children": [
       {
         "name": "Stupefy",
+        "children": []
+      },
+      {
+        "name": "Levioso",
         "children": []
       }
     ]

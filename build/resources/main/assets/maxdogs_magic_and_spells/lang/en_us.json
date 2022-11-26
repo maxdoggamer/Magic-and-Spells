@@ -1,12 +1,16 @@
 {
+  "key.maxdogs_magic_and_spells.stupefy_key": "Stupefy",
+  "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
   "effect.maxdogs_magic_and_spells.stunned": "Stunned",
+  "key.maxdogs_magic_and_spells.levicorpus_key": "Levicorpus",
+  "key.maxdogs_magic_and_spells.leviosa_key": "Leviosa",
   "block.maxdogs_magic_and_spells.mana_stone_block": "Block of ManaStone",
   "key.maxdogs_magic_and_spells.accio_key": "Accio",
   "item.maxdogs_magic_and_spells.wand_1": "Wand",
   "item.maxdogs_magic_and_spells.accio_spell": "Accio Spell",
-  "key.maxdogs_magic_and_spells.stupefy_key": "Stupefy",
-  "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
   "item.maxdogs_magic_and_spells.stupefy_spell": "Stupefy",
+  "item.maxdogs_magic_and_spells.leviosa_spell": "Leviosa Spell",
   "item.maxdogs_magic_and_spells.magicbullet": "Magicbullet",
+  "item.maxdogs_magic_and_spells.levicorpus_spell": "Levicorpus",
   "block.maxdogs_magic_and_spells.mana_stone_ore": "ManaStone Ore"
 }

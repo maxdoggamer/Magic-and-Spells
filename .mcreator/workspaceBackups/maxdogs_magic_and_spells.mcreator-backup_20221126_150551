@@ -276,6 +276,12 @@
   ],
   "variable_elements": [
     {
+      "name": "Stunned",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
       "name": "Recharge",
       "type": "logic",
       "scope": "player_lifetime",
@@ -302,6 +308,10 @@
     "children": [
       {
         "name": "Stupefy",
+        "children": []
+      },
+      {
+        "name": "Levioso",
         "children": []
       }
     ]

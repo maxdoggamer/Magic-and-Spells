@@ -16,6 +16,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.maxdogsmagicandspells.network.StupefyKeyMessage;
+import net.mcreator.maxdogsmagicandspells.network.LeviosaKeyMessage;
+import net.mcreator.maxdogsmagicandspells.network.LevicorpusKeyMessage;
 import net.mcreator.maxdogsmagicandspells.network.AccioKeyMessage;
 import net.mcreator.maxdogsmagicandspells.MaxdogsMagicAndSpellsMod;
 
@@ -47,11 +49,40 @@ public class MaxdogsMagicAndSpellsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping LEVIOSA_KEY = new KeyMapping("key.maxdogs_magic_and_spells.leviosa_key", GLFW.GLFW_KEY_C, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				MaxdogsMagicAndSpellsMod.PACKET_HANDLER.sendToServer(new LeviosaKeyMessage(0, 0));
+				LeviosaKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping LEVICORPUS_KEY = new KeyMapping("key.maxdogs_magic_and_spells.levicorpus_key", GLFW.GLFW_KEY_V,
+			"key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				MaxdogsMagicAndSpellsMod.PACKET_HANDLER.sendToServer(new LevicorpusKeyMessage(0, 0));
+				LevicorpusKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(ACCIO_KEY);
 		event.register(STUPEFY_KEY);
+		event.register(LEVIOSA_KEY);
+		event.register(LEVICORPUS_KEY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -61,6 +92,8 @@ public class MaxdogsMagicAndSpellsModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				ACCIO_KEY.consumeClick();
 				STUPEFY_KEY.consumeClick();
+				LEVIOSA_KEY.consumeClick();
+				LEVICORPUS_KEY.consumeClick();
 			}
 		}
 	}
