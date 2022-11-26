@@ -181,9 +181,106 @@
         ]
       },
       "path": "~/Stupefy"
+    },
+    {
+      "name": "StupefySpellProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_spell_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stupefy"
+    },
+    {
+      "name": "StupefySpell",
+      "type": "rangeditem",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_spell",
+      "path": "~/Stupefy"
+    },
+    {
+      "name": "StupefyParticles",
+      "type": "particle",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_particles",
+      "path": "~/Stupefy"
+    },
+    {
+      "name": "StupefySpellWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_spell_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StupefyKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StupefyKey",
+      "type": "keybind",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stupefy_key"
     }
   ],
   "variable_elements": [
+    {
+      "name": "Stunned",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
     {
       "name": "Recharge",
       "type": "logic",
@@ -199,7 +296,9 @@
       "key.maxdogs_magic_and_spells.accio_key": "Accio",
       "item.maxdogs_magic_and_spells.wand_1": "Wand",
       "item.maxdogs_magic_and_spells.accio_spell": "Accio Spell",
+      "key.maxdogs_magic_and_spells.stupefy_key": "Stupefy",
       "item.maxdogs_magic_and_spells.mana_stone": "ManaStone",
+      "item.maxdogs_magic_and_spells.stupefy_spell": "Stupefy",
       "item.maxdogs_magic_and_spells.magicbullet": "Magicbullet",
       "block.maxdogs_magic_and_spells.mana_stone_ore": "ManaStone Ore"
     }
